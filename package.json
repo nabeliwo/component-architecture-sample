@@ -8,7 +8,8 @@
     "storybook": "start-storybook -s ./static -p 9001",
     "dev": "npm-run-all -p watch:* storybook",
     "lint": "eslint ./src",
-    "test": "ava -v"
+    "test": "ava -v",
+    "test:cover": "nyc --reporter=lcov --reporter=text npm test"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "eslint-plugin-react": "^6.10.0",
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.1",
+    "nyc": "^10.1.2",
     "react-addons-test-utils": "^15.4.2",
     "sinon": "^1.17.7"
   },

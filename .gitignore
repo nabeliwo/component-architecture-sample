@@ -35,6 +35,7 @@ bundle.js
 npm-debug.log
 testem.log
 /typings
+.nyc_output/
 
 # e2e
 /e2e/*.js
