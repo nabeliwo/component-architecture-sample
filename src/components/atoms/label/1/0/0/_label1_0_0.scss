@@ -1,0 +1,23 @@
+/*-------------------------------------//
+//  Commmon
+//-------------------------------------*/
+
+.label1_0_0 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+/*-------------------------------------//
+//  Modifier
+//-------------------------------------*/
+
+/* theme */
+
+.label1_0_0.theme-primary { color: $color-primary; }
+
+/* size */
+
+.label1_0_0.size-l { font-size: 1.6rem; }
+.label1_0_0.size-m { font-size: 1.4rem; }
+.label1_0_0.size-x { font-size: 1.2rem; }

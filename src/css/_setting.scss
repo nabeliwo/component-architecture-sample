@@ -1,0 +1,13 @@
+//-------------------------------------
+//  Settings
+//-------------------------------------
+// ----- Fonts ----- //
+$font-family-body: Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'モリサワ 新ゴ R', 'Droid Sans', 'メイリオ', sans-serif;
+$font-family-icon: "wall";
+$font-file: "";
+
+@font-face{
+  font-family: $font-family-icon;
+  src: url("../font/" + $font-file +  ".woff") format('woff'),
+        url("../font/" + $font-file + ".ttf") format('truetype');
+}

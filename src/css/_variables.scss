@@ -1,0 +1,42 @@
+//-------------------------------------
+//  Variables
+//-------------------------------------
+// ----- Color [SHOULD]----- //
+$color-primary: #745bc3;
+$color-primary-dark: darken($color-primary, 20%);
+$color-primary-light: lighten($color-primary, 20%);
+$color-accent: #408fec;
+$color-accent-dark: darken($color-accent, 20%);
+$color-accent-light: lighten($color-accent, 20%);
+$color-background: #fff;
+$color-text: #4c4c4c;
+$color-text-soft: #999;
+
+// ----- Color [MAY]----- //
+$color-category-free: #fe5856;
+$color-category-recent: #f5d400;
+$color-category-sale: #fda62a;
+$color-category-rapid: #4eab2e;
+$color-category-creditcard: #64c1f1;
+$color-category-appli: #fe1826;
+$color-category-monthly: #4c91f3;
+$color-category-enquete: #8ecb4d;
+$color-category-reduction: #ac01c5;
+$color-category-video: #ccc;
+
+// ----- Color [MAY]----- //
+$color-ranking-1: #c98910;
+$color-ranking-2: #a8a8a8;
+$color-ranking-3: #965a38;
+$color-ranking: #929292;
+
+// ----- Color [MAY]----- //
+$color-carrier-docomo: #AD2430;
+$color-carrier-au: #ED572D;
+$color-carrier-softbank: gray;
+
+// ----- Base Space ----- //
+$space-base: 4px;
+
+// ----- Base Radius Size ----- //
+$radius-base: 4px;

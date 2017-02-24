@@ -1,0 +1,59 @@
+//-------------------------------------
+//  Default Theme
+//-------------------------------------
+$theme-background: $color-background;
+$theme-text: $color-text;
+$theme-item-name: $color-accent;
+$theme-point-text-num: $color-primary;
+$theme-point-text-unit: $color-text-soft;
+$theme-point-text-label: $color-text-soft;
+$theme-headline-background: $color-accent;
+$theme-headline-text: #fff;
+$theme-flat-button-background: $color-primary;
+$theme-flat-button-text: #fff;
+$theme-solid-button-background: $color-primary;
+$theme-solid-button-shadow: $color-primary-dark;
+$theme-solid-button-text: #fff;
+
+// ----- Color [MUST NOT]----- //
+$color-docomo: #bd383e;
+$color-au: #f36e30;
+$color-softbank: #929292;
+
+// ----- Space ----- //
+$space-1: $space-base;
+$space-2: $space-base * 2;
+$space-3: $space-base * 3;
+$space-4: $space-base * 4;
+$space-5: $space-base * 5;
+$space-6: $space-base * 6;
+$space-7: $space-base * 7;
+$space-8: $space-base * 8;
+$space-9: $space-base * 9;
+$space-10: $space-base * 10;
+
+// ----- Radius Size ----- //
+$radius-1: $radius-base;
+$radius-2: $radius-base * 2;
+$radius-3: $radius-base * 3;
+$radius-4: $radius-base * 4;
+$radius-5: $radius-base * 5;
+
+// ----- Font Size ----- //
+$f9:  0.9rem;
+$f10: 1.0rem;
+$f11: 1.1rem;
+$f12: 1.2rem;
+$f13: 1.3rem;
+$f14: 1.4rem;
+$f15: 1.5rem;
+$f16: 1.6rem;
+$f17: 1.7rem;
+$f18: 1.8rem;
+$f19: 1.9rem;
+$f20: 2.0rem;
+$f21: 2.1rem;
+$f22: 2.2rem;
+$f23: 2.3rem;
+$f24: 2.4rem;
+$f25: 2.5rem;

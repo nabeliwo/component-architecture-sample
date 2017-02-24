@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "icon";
+  src: url('../assets/icon.eot');
+  src: url('../assets/icon.eot?#iefix') format('eot'),
+    url('../assets/icon.woff') format('woff'),
+    url('../assets/icon.ttf') format('truetype'),
+    url('../assets/icon.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon:before {
+  display: inline-block;
+  font-family: "icon";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.icon-2x { font-size: 2em; }
+.icon-3x { font-size: 3em; }
+.icon-4x { font-size: 4em; }
+.icon-5x { font-size: 5em; }
+.icon-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.icon-1:before { content: "\EA01" }
+.icon-10:before { content: "\EA02" }
+.icon-11:before { content: "\EA03" }
+.icon-12:before { content: "\EA04" }
+.icon-13:before { content: "\EA05" }
+.icon-14:before { content: "\EA06" }
+.icon-2:before { content: "\EA07" }
+.icon-3:before { content: "\EA08" }
+.icon-4:before { content: "\EA09" }
+.icon-5:before { content: "\EA0A" }
+.icon-6:before { content: "\EA0B" }
+.icon-7:before { content: "\EA0C" }
+.icon-8:before { content: "\EA0D" }
+.icon-9:before { content: "\EA0E" }

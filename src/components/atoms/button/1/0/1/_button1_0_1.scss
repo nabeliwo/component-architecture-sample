@@ -1,0 +1,46 @@
+/*-------------------------------------//
+//  Commmon
+//-------------------------------------*/
+
+.button1_0_1 {
+  display: inline-block;
+  line-height: 1;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+/*-------------------------------------//
+//  Modifier
+//-------------------------------------*/
+
+/* theme */
+
+.button1_0_1.theme-primary {
+  box-shadow: 0 4px $color-primary-dark;
+  background-color: $color-primary;
+  color: #fff;
+}
+
+/* size */
+
+.button1_0_1.size-wide { width: 100%; }
+.button1_0_1.size-l {
+  font-size: 1.6rem;
+  padding: 12px;
+}
+.button1_0_1.size-m {
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.button1_0_1.size-s {
+  font-size: 1.2rem;
+  padding: 8px 10px;
+}
+
+.button1_0_1.tap {
+  position: relative;
+  top: 4px;
+  box-shadow: 0 0;
+}

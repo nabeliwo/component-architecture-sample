@@ -1,0 +1,39 @@
+/*-------------------------------------//
+//  Commmon
+//-------------------------------------*/
+
+.input1_0_0 {
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+
+
+/*-------------------------------------//
+//  Modifier
+//-------------------------------------*/
+
+/* theme */
+
+.input1_0_0.theme-primary:focus {
+  border-color: $color-primary;
+  box-shadow: 0 0 2px $color-primary;
+}
+
+/* size */
+
+.input1_0_0.size-l {
+  width: 300px;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.input1_0_0.size-m {
+  width: 200px;
+  font-size: 1.2rem;
+  padding: 8px;
+}
+.input1_0_0.size-s {
+  width: 100px;
+  font-size: 1.0rem;
+  padding: 6px;
+}
+.input1_0_0.size-wide { width: 100%; }

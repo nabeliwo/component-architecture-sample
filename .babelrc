@@ -1,0 +1,26 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    [
+      "module-alias",
+      [
+        {
+          "src": "./src/components/frames",
+          "expose": "frame"
+        },
+        {
+          "src": "./src/components/molecules",
+          "expose": "molecule"
+        },
+        {
+          "src": "./src/components/atoms",
+          "expose": "atom"
+        },
+        {
+          "src": "./src/util",
+          "expose": "util"
+        }
+      ]
+    ]
+  ]
+}

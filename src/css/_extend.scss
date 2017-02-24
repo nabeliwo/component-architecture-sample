@@ -1,0 +1,58 @@
+//-------------------------------------
+//  Settings
+//-------------------------------------
+// ----- Word Break ----- //
+%break {
+  word-break: break-all;
+}
+%no-elps {
+  white-space: normal;
+  text-overflow: clip;
+  -webkit-line-clamp: initial;
+}
+
+// ----- Single Line Ellipsis ----- //
+%elps {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// ----- Multi Line Ellipsis ----- //
+%ml-elps {
+  @extend %elps;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; //default 4 line
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  &.line1 {
+    -webkit-line-clamp: 1; // 2 line
+  }
+  &.line2 {
+    -webkit-line-clamp: 2; // 2 line
+  }
+  &.line3 {
+    -webkit-line-clamp: 3; // 3 line
+  }
+}
+
+// ----- Clearfix ----- //
+%clearfix {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+// ----- Tap ----- //
+%tap {
+  opacity: 0.7;
+}
+
+// ---- Tap highlight color ----//
+%no-tap-highlight {
+  -webkit-tap-highlight-color: transparent;
+}

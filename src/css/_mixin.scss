@@ -1,0 +1,31 @@
+/* -------------------------------------------------
+ *          メディアクエリ
+ *  480以上は横向きと見なしてよさそう。
+ *  iPhone4が320x480。
+------------------------------------------------- */
+@mixin mqw320-374 { @media screen and (max-width: 374px) {@content;} }
+@mixin mqw375-413 { @media screen and (min-width: 375px) and (max-width: 413px) { @content; } }
+@mixin mqw414-479 { @media screen and (min-width: 414px) and (max-width: 479px) { @content; } }
+@mixin mqw480-599 { @media screen and (min-width: 480px) and (max-width: 599px) { @content; } }
+@mixin mqw600-767 { @media screen and (min-width: 600px) and (max-width: 767px) { @content; } }
+@mixin mqw768-1023 { @media screen and (min-width: 768px) and (max-width: 1023px) { @content; } }
+@mixin mqw1024 { @media screen and (min-width: 1024px) { @content; } }
+
+//@mixin mqw480 { @media screen and (max-width: 480px) { @content; } }
+//@mixin mqw600 { @media screen and (min-width: 481px) and (max-width: 600px) { @content; } }
+//@mixin mqw768 { @media screen and (min-width: 601px) and (max-width: 768px) { @content; } }
+//@mixin mqw1024 { @media screen and (min-width: 769px) and (max-width: 1024px) { @content; } }
+//@mixin mqw1025 { @media screen and (min-width: 1025px) { @content; } }
+@mixin mqh320 { @media screen and (max-height: 320px) { @content; } }
+@mixin mqTablet { @media screen and (min-width: 380px) and (min-height: 530px) { @content; } }
+
+/**
+ *  responsive
+ */
+@mixin bannerL {
+  .banner {
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+  }
+}
