@@ -54,7 +54,7 @@ jsを修正した場合はブラウザがHot Module Replacementにより更新�
 yarn run lint
 ```
 
-eslintによるlintを実行します。  
+[ESLint](http://eslint.org/)によるlintを実行します。  
 airbnbの設定を基本的には反映しています。あまりに厳しいルールは若干変更しています。
 
 push前に必ずこのタスクを動かして、lintが通った状態でpushします。
@@ -66,7 +66,7 @@ yarn test
 ```
 
 テストを実行します。  
-テストはava + enzyme + sinonを使って作成します。
+テストはmocha + power-assert + enzyme + jsdom + sinonを使って作成します。
 
 必ずtestがパスする状態でpushします。
 
@@ -76,5 +76,14 @@ yarn test
 yarn run test:cover
 ```
 
-テストのカバレッジを確認します。
-できるだけ全てのファイルに対応するテストを作ることを目指します。
+テストのカバレッジを確認します。  
+できるだけカバレッジをあげたいですが、カバレッジ100%を目指すわけではないです。
+
+### esdoc
+
+```
+yarn run esdoc
+```
+
+[ESDoc](https://esdoc.org/)を使ってドキュメントを生成します。  
+`./doc/index.html` をブラウザで表示すると確認できます。
