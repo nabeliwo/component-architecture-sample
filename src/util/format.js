@@ -1,9 +1,9 @@
 /**
  * 値が数字だけかどうか(文字列などが含まれていないか)を判定します
  * @param {Number|String} num
- * @return {Boolean} true|false
+ * @return {Boolean} 値が数字だけかどうか
  */
-export function isOnlyNumber(num) {
+export function isNumber(num) {
   if (typeof num !== 'number' && typeof num !== 'string') {
     return false;
   }
@@ -15,11 +15,11 @@ export function isOnlyNumber(num) {
 /**
  * 数字3桁毎に「,(comma)」を挿入
  * @param {Number|String} num
- * @return {String} Number add a comma
+ * @return {String} Number added comma
  */
 export function number(num) {
   // 数字以外の値が含まれていた場合はそのまま値を返します
-  if (!isOnlyNumber(num)) {
+  if (!isNumber(num)) {
     return num;
   }
 

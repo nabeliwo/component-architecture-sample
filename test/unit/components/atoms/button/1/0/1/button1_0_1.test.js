@@ -2,10 +2,10 @@ import assert from 'power-assert';
 import sinon from 'sinon';
 import React from 'react';
 import { mount } from 'enzyme';
-import Button from '../../../../../../../../src/components/atoms/button/1/0/0/button1_0_0';
+import Button from '../../../../../../../../src/components/atoms/button/1/0/1/button1_0_1';
 
-/** @test {Button1_0_0} */
-describe('Button1_0_0', () => {
+/** @test {Button1_0_1} */
+describe('Button1_0_1', () => {
   const onClick = sinon.spy();
   const wrapper = mount(<Button onClick={onClick}>ボタン</Button>);
 
@@ -18,5 +18,3 @@ describe('Button1_0_0', () => {
     assert(onClick.calledOnce === true);
   });
 });
-
-

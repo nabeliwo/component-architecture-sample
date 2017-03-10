@@ -1,24 +1,41 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 /**
- * Input1_0_0
+ * Component#Atom
+ * labelタグ。
  * Fieldから使用される場合、同じnameを渡せばhtmlForがInputのidと同じになります。
  */
-const Label1_0_0 = ({
-  name,
-  children,
-  modifier = '',
-  styles = {}
-}) => <label htmlFor={`form_${name}`} className={`label1_0_0 ${modifier}`} style={styles}>{children}</label>;
+export default class Label1_0_0 extends Component {
 
-Label1_0_0.propTypes = {
-  name: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element
-  ]).isRequired,
-  modifier: PropTypes.string,
-  styles: PropTypes.object
-};
+  /**
+   * propTypes
+   * @property {string} name name属性
+   * @property {string|ReactElement} children 子要素
+   * @property {string} modifier CSSの修飾子
+   * @property {Object} styles その他追加のスタイル
+   */
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    children: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.element
+    ]).isRequired,
+    modifier: PropTypes.string,
+    styles: PropTypes.object
+  }
 
-export default Label1_0_0;
+  /**
+   * render
+   * @return {ReactElement} markup
+   */
+  render() {
+    const {
+      name,
+      children,
+      modifier = '',
+      styles = {}
+    } = this.props;
+
+    return <label htmlFor={`form_${name}`} className={`label1_0_0 ${modifier}`} style={styles}>{children}</label>;
+  }
+}

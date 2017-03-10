@@ -1,9 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 
-import Field1_0_0 from './field1_0_0';
+import Field from './field1_0_0';
 
-const wrapperStyle = { padding: '20px' };
 const input = {
   type: 'text',
   placeholder: 'ユーザー名を入力してください。',
@@ -11,33 +10,9 @@ const input = {
 };
 
 storiesOf('Field1_0_0', module)
-.add('ラベル付き', () => (
-  <div style={wrapperStyle}>
-    <Field1_0_0 name="name" label="ユーザー名" input={input} modifier="size-m" />
-  </div>
-))
-.add('ラベル無し', () => (
-  <div style={wrapperStyle}>
-    <Field1_0_0 name="name" input={input} modifier="size-m" />
-  </div>
-))
-.add('エラー', () => (
-  <div style={wrapperStyle}>
-    <Field1_0_0 name="name" label="ユーザー名" error="そのユーザー名は既に使われています。" input={input} modifier="size-m" />
-  </div>
-))
-.add('large', () => (
-  <div style={wrapperStyle}>
-    <Field1_0_0 name="name" label="ユーザー名" input={input} modifier="size-l" />
-  </div>
-))
-.add('small', () => (
-  <div style={wrapperStyle}>
-    <Field1_0_0 name="name" label="ユーザー名" input={input} modifier="size-s" />
-  </div>
-))
-.add('primary', () => (
-  <div style={wrapperStyle}>
-    <Field1_0_0 name="name" label="ユーザー名" input={input} modifier="size-m theme-primary" />
-  </div>
-));
+.add('ラベル付き', () => <Field name="name" label="ユーザー名" input={input} modifier="size-m" />)
+.add('ラベル無し', () => <Field name="name" input={input} modifier="size-m" />)
+.add('エラー', () => <Field name="name" label="ユーザー名" error="そのユーザー名は既に使われています。" input={input} modifier="size-m" />)
+.add('large', () => <Field name="name" label="ユーザー名" input={input} modifier="size-l" />)
+.add('small', () => <Field name="name" label="ユーザー名" input={input} modifier="size-s" />)
+.add('primary', () => <Field name="name" label="ユーザー名" input={input} modifier="size-m theme-primary" />);

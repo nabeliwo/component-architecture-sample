@@ -1,0 +1,11 @@
+{
+  "source": "./src",
+  "destination": "./doc",
+  "test": {
+    "type": "mocha",
+    "source": "./test/unit"
+  },
+  "experimentalProposal": {
+    "classProperties": true
+  }
+}

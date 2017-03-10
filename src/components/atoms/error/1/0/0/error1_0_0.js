@@ -1,21 +1,37 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 /**
- * Error1_0_0
+ * Component#Atom
+ * エラー文言表示。
  */
-const Error1_0_0 = ({
-  children,
-  modifier = '',
-  styles = {}
-}) => <p className={`error1_0_0 ${modifier}`} style={styles}>{children}</p>;
+export default class Error1_0_0 extends Component {
 
-Error1_0_0.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element
-  ]).isRequired,
-  modifier: PropTypes.string,
-  styles: PropTypes.object
-};
+  /**
+   * propTypes
+   * @property {string|ReactElement} children 子要素
+   * @property {string} modifier CSSの修飾子
+   * @property {Object} styles その他追加のスタイル
+   */
+  static propTypes = {
+    children: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.element
+    ]).isRequired,
+    modifier: PropTypes.string,
+    styles: PropTypes.object
+  }
 
-export default Error1_0_0;
+  /**
+   * render
+   * @return {ReactElement} markup
+   */
+  render() {
+    const {
+      children,
+      modifier = '',
+      styles = {}
+    } = this.props;
+
+    return <p className={`error1_0_0 ${modifier}`} style={styles}>{children}</p>;
+  }
+}

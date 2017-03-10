@@ -21,6 +21,7 @@
           "expose": "util"
         }
       ]
-    ]
+    ],
+    ["transform-class-properties", { "spec": true }]
   ]
 }
